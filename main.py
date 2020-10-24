@@ -159,7 +159,7 @@ def draw_board(notes, game_state):
         max_bpm = int(100 * 100 / (Note.note_spacing / game_state['max_speed_so_far']))
         # TEXT_FONT.render_to(surface, (line_x_off, line_to_y(12)), "speed " + str(bpm) + " " + str(model['fps']), note_color)
         TEXT_FONT.render_to(surface, (line_x_off, line_to_y(12)),
-                            " " * 50 + " max" + str(max_bpm) + " speed " + str(bpm) + " hits " + str(model['hits']) + \
+                            " " * 50 + "max " + str(max_bpm) + " speed " + str(bpm) + " hits " + str(model['hits']) + \
                             " misses " + str(model['misses']), note_color)
 
     def sl_to_y(staff, line):
